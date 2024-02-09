@@ -44,7 +44,7 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/username/java-formation.git
+    git clone https://github.com/Majidied/java-algorithms.git
     ```
 
 2. Navigate to the project directory:
