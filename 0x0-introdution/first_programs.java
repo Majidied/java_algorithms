@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Partie_1 {
+public class first_programs {
     //Partie 1. L'exercice "série harmonique".
 
     /**

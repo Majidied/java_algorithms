@@ -1,7 +1,7 @@
 import java.math.BigInteger;
 import java.lang.String;
 
-public class Partie_2 {
+public class BigInteger_Random {
     // Exercice 1. Question 1:
     /**
      * factorielle1 - calcul de la factorielle en utilisant la méthode récursive.
