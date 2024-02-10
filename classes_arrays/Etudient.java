@@ -1,11 +1,10 @@
-package java_algorithms.classes_arrays;
 
 public class Etudient {
     String nom;
-    Integer nummerEtudiant;
+    int nummerEtudiant;
     String email;
 
-    Etudient (String nom, Integer nummerEtudiant, String email) {
+    Etudient (String nom, int nummerEtudiant, String email) {
         this.nom = nom;
         this.nummerEtudiant = nummerEtudiant;
         this.email = email;
@@ -16,59 +15,59 @@ public class Etudient {
     }
 
     /**
-    * Sets the Nom value. This is used to determine the type of object that will be created and used in the search.
+    * Définit la valeur Nom. Cette valeur est utilisée pour déterminer le type d'objet qui sera créé et utilisé dans la recherche
     * 
-    * @param nom -Nom value to be set for this object
+    * @param nom -Value nominale à définir pour cet objet
     */
     void setNom(String nom) {
         this.nom = nom;
     }
     /**
-    * Returns the object name. This is used to generate error messages when there is an error in the XML
+    * Retourne le nom de l'objet. Ceci est utilisé pour générer des messages d'erreur lorsqu'il y a
     * 
     * 
-    * @return the name of the
+    * @return le nom de la
     */
     String getNom() {
         return this.nom;
     }
 
     /**
-    * The method to set up the set should be implemented.
+    * La méthode de mise en place de l'ensemble doit être mise en œuvre.
     * 
-    * @param n -The names of the students
+    * @param n -Les noms des étudiants
     */
-    // Number of students who have been executed
-    void setNummerEtudiant(Integer n) { if(n != null) this.nummerEtudiant=n;}
+    // Nombre d'étudiants exécutés
+    void setNummerEtudiant(int n) { this.nummerEtudiant=n;}
 
     /**
-    * The methodology for the results of a constructor is published.
+    * La méthodologie des résultats d'un constructeur est publiée.
     * 
     * 
-    * @return The number of students of the university
+    * @return Nombre d'étudiants de l'université
     */
-    Integer getNummerEtudiant() { return this.nummerEtudiant; }
+    int getNummerEtudiant() { return this.nummerEtudiant; }
 
     /**
-    * Sets the email address. Must contain @ and.com characters. This is used to send emails to the user when they log in
+    * Définit l'adresse e-mail. Il doit contenir des caractères @ and.com. Ceci est utilisé pour envoyer
     * 
-    * @param email -the e-mail address to be set as the
+    * @param email -l'adresse e-mail à définir comme le
     */
     void setEmail(String email) {
-        // Set the email address of the user.
+        // Définir l'adresse e-mail de l'utilisateur.
         if(!email.contains("@") || !email.contains(".com")) throw new IllegalArgumentException();
         else this.email = email;
     }
     /**
-    * Returns the email associated with this user. Note that this is a copy of the #email property.
+    * Retourne le courriel associé à cet utilisateur. Notez que c'est une copie de la propriété #email
     * 
     * 
-    * @return the email associated with this user or null if there is
+    * @return l'e-mail associé à cet utilisateur ou nul si il y a
     */
     String getEmail() {return this.email;}
 
     /**
-    * The information of an address in function of the
+    * Les informations d'une adresse en fonction de la
     */
     public void afficher(){
         System.out.println("Nom: " + this.getNom());

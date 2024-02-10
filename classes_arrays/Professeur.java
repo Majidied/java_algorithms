@@ -1,11 +1,10 @@
-package java_algorithms.classes_arrays;
 public class Professeur {
     String nom;
-    Integer nummerSomme;
+    int nummerSomme;
     String email;
     String grade;
 
-    Professeur(String n, Integer s, String e, String g) {
+    Professeur(String n, int s, String e, String g) {
         this.nom = n;
         this.nummerSomme = s;
         this.email = e;
@@ -17,64 +16,62 @@ public class Professeur {
     }
 
     /**
-    * Returns the object name. This is used to generate error messages when there is no name in the XML file.
+    * Retourne le nom de l'objet. Ceci est utilisé pour générer des messages d'erreur lorsqu'il n'
     * 
     * 
-    * @return the object's name or null if it is
+    * @return le nom de l'objet ou nul si c'est le cas
     */
     public String getNom() { return nom; }
     /**
-    * Set the Number. This is used to identify the person who sent the message.
+    * Définir le numéro. Il est utilisé pour identifier la personne qui a envoyé le message.
     * 
-    * @param nom -The name of the person who sent the
+    * @param nom -Nom de la personne qui a envoyé le
     */
     public void setNom(String nom) { this.nom = nom; }
 
     /**
-    * This method is written in the current calendar week and will be published.
+    * Cette méthode est rédigée dans la semaine civile en cours et sera publiée.
     * 
     * 
-    * @return Number of days
+    * @return Nombre de jours
     */
-    public Integer getNummerSomme() { return nummerSomme; }
+    public int getNummerSomme() { return nummerSomme; }
     /**
-    * Settle two sums in one function
+    * Régler deux sommes dans une fonction
     * 
-    * @param somme -The number two Som
+    * @param somme -Le numéro deux Som
     */
-    public void setNummerSomme(Integer somme) { this.nummerSomme = somme; }
+    public void setNummerSomme(int somme) { this.nummerSomme = somme; }
 
     /**
-    * Returns the email associated with this user. Note that this is a copy of the value returned by #getEmail ()
+    * Retourne le courrier électronique associé à cet utilisateur. Notez que c'est une copie de la
     * 
     * 
-    * @return the email associated with this user or null if there is
+    * @return l'e-mail associé à cet utilisateur ou nul si il y a
     */
     public String getEmail() { return email; }
     /**
-    * Sets the email to be sent to the user. This is a convenience method for setting the email to be sent to the user
+    * Définit le courrier électronique à envoyer à l'utilisateur.
     * 
-    * @param email -the e-mail
+    * @param email -le courrier électronique
     */
     public void setEmail(String email) { this.email = email; }
 
     /**
-    * Returns the grade of the grade. This is used to generate HTML for the grade field.
+    * Retourne la note de la note. Ceci est utilisé pour générer HTML pour le champ de note.
     * 
     * 
-    * @return String representation of the grade (not null) or
+    * @return représentation en chaîne de la note (pas nulle) ou
     */
     public String getGrade() { return grade; }
     /**
-    * The grade of the person is determined. Note that this does not affect the number of people in the person's group.
+    * Le niveau de la personne est déterminé, ce qui n'affecte pas le nombre de personnes dans le groupe.
     * 
-    * @param grade -The grade of the person as a string e.g.
+    * @param grade -La note de la personne comme une chaîne par exemple
     */
     public void setGrade(String grade) { this.grade = grade; }
 
-    /**
-    * The Commission shall adopt the following measures:
-    */
+    
     public void afficher(){
         System.out.println("Le professeur " + getNom());
         System.out.println("Adresse email: " + getEmail()); 
