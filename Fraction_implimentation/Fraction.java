@@ -12,11 +12,11 @@ public class Fraction {
             throw new IllegalArgumentException("Denominator cannot be zero");
         } else if ((num.compareTo(BigInteger.ZERO) > 0 && denom.compareTo(BigInteger.ZERO) > 0) ||
                    (num.compareTo(BigInteger.ZERO) < 0 && denom.compareTo(BigInteger.ZERO) < 0)) {
-            this.numerator = num;
-            this.denominator = denom;
-        } else {
             this.numerator = num.abs();
             this.denominator = denom.abs();
+        } else {
+            this.numerator = num;
+            this.denominator = denom;
         }
     }
 

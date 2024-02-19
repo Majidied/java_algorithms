@@ -9,7 +9,6 @@ public class Etudient {
         this.nummerEtudiant = nummerEtudiant;
         this.email = email;
     }
-
     Etudient () {
         super();
     }
